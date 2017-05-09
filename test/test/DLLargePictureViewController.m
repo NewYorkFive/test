@@ -23,8 +23,6 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-//    self.navigationController.navigationBar.hidden = true;
     [self.navigationController setNavigationBarHidden:true animated:true];
 }
 
@@ -37,7 +35,7 @@
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.imageView];
     [self.scrollView setZoomScale:self.minScale];
-        
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonClick)];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
@@ -62,7 +60,11 @@
     
 }
 
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+    self.timer = nil;
+}
 
 - (void)barButtonClick{
     [self dismissViewControllerAnimated:false completion:nil];
