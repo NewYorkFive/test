@@ -52,6 +52,7 @@ static NSString *imageName = @"timg";
 
 
 
+
 - (void)testLargeImageAction{
     DLLargePictureViewController *targetVc = [[DLLargePictureViewController alloc]init];
     targetVc.imageName = imageName;

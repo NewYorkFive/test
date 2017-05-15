@@ -21,7 +21,7 @@
     
     ViewController *testVC = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:testVC];
-    nav.navigationBar.hidden = true;
+//    nav.navigationBar.hidden = true;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.

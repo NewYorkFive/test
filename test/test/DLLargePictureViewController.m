@@ -21,17 +21,23 @@
 
 @implementation DLLargePictureViewController
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:true animated:true];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
 }
 
+
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    self.navigationController.navigationBar.alpha = 0.1;
+}
+
 - (void)setupUI{
+    self.automaticallyAdjustsScrollViewInsets = false;
+    
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.imageView];
     [self.scrollView setZoomScale:self.minScale];
@@ -45,20 +51,54 @@
 
 - (void)tapAction:(UITapGestureRecognizer *)tapAction{
     
+
+    
     [self.timer invalidate];
     self.timer = nil;
     
-    BOOL flag = !self.navigationController.navigationBar.hidden;
-    NSLog(@"%zd",flag);
-    [self.navigationController setNavigationBarHidden:flag animated:true];
+    BOOL flag = (self.navigationController.navigationBar.alpha == 0.0) ? true : false;
+    NSLog(@"flag = %zd",flag);
     
-    if (!flag) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 repeats:false block:^(NSTimer * _Nonnull timer) {
-            [self.navigationController setNavigationBarHidden:true animated:true];
+    if (flag) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.navigationController.navigationBar.alpha = 1.0;
+            [self.view layoutIfNeeded];
+        }];
+    }else{
+        [UIView animateWithDuration:.5 animations:^{
+            self.navigationController.navigationBar.alpha = 0.0;
+            [self.view layoutIfNeeded];
         }];
     }
     
+    if (flag) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 repeats:false block:^(NSTimer * _Nonnull timer) {
+            self.navigationController.navigationBar.alpha = 0.0;
+            [UIView animateWithDuration:.5 animations:^{
+                [self.view layoutIfNeeded];
+            }];
+        }];
+    }
+    
+//    BOOL flag = !self.navigationController.navigationBar.hidden;
+//    NSLog(@"%zd",flag);
+//    [self.navigationController setNavigationBarHidden:flag animated:true];
+    
+//    if (!flag) {
+//        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 repeats:false block:^(NSTimer * _Nonnull timer) {
+//            [self.navigationController setNavigationBarHidden:true animated:true];
+//        }];
+//    }
+    
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //    [self.navigationController setNavigationBarHidden:true animated:true];
+//    NSLog(@"viewframe:%@",NSStringFromCGRect(self.view.frame));
+    
+}
+
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
@@ -80,7 +120,7 @@
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView{
     
     CGFloat offsetX = (_scrollView.bounds.size.width > _scrollView.contentSize.width) ? (_scrollView.bounds.size.width - _scrollView.contentSize.width) * 0.5 : 0.0;
-    CGFloat offsetY = (_scrollView.bounds.size.height > _scrollView.contentSize.height) ? (_scrollView.bounds.size.height - _scrollView.contentSize.height) * 0.5 : 0.0;
+    CGFloat offsetY = (_scrollView.bounds.size.height > _scrollView.contentSize.height ) ? (_scrollView.bounds.size.height - _scrollView.contentSize.height ) * 0.5 : 0.0;
 //    offsetY -= self.navigationController.navigationBar.bounds.size.height;
     self.imageView.center = CGPointMake(_scrollView.contentSize.width * 0.5 + offsetX, _scrollView.contentSize.height * 0.5 + offsetY);
     
