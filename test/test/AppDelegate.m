@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
+#import "DLFourPartViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +22,7 @@
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    ViewController *testVC = [[ViewController alloc]init];
+    DLFourPartViewController *testVC = [[DLFourPartViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:testVC];
 //    nav.navigationBar.hidden = true;
     self.window.rootViewController = nav;

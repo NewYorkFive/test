@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9430F0F11EEFDF68008E0E3D /* DLFourPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0F01EEFDF68008E0E3D /* DLFourPartViewController.m */; };
+		9430F0F41EEFDF7C008E0E3D /* DLFourPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0F31EEFDF7C008E0E3D /* DLFourPartView.m */; };
+		9430F10B1EEFE1F4008E0E3D /* NSArray+DLArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0F81EEFE1F4008E0E3D /* NSArray+DLArray.m */; };
+		9430F10C1EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0FA1EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.m */; };
+		9430F10D1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0FC1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.m */; };
+		9430F10E1EEFE1F4008E0E3D /* NSObject+DLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F0FE1EEFE1F4008E0E3D /* NSObject+DLObject.m */; };
+		9430F10F1EEFE1F4008E0E3D /* NSString+DLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F1001EEFE1F4008E0E3D /* NSString+DLString.m */; };
+		9430F1101EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F1021EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.m */; };
+		9430F1111EEFE1F4008E0E3D /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F1041EEFE1F4008E0E3D /* UIButton+DLButton.m */; };
+		9430F1121EEFE1F4008E0E3D /* UIColor+DLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F1061EEFE1F4008E0E3D /* UIColor+DLColor.m */; };
+		9430F1131EEFE1F4008E0E3D /* UILabel+DLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F1081EEFE1F4008E0E3D /* UILabel+DLLabel.m */; };
+		9430F1141EEFE1F4008E0E3D /* UIViewController+DLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430F10A1EEFE1F4008E0E3D /* UIViewController+DLViewController.m */; };
 		943590AF1EC04E7D0073CF16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943590AE1EC04E7D0073CF16 /* main.m */; };
 		943590B21EC04E7D0073CF16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943590B11EC04E7D0073CF16 /* AppDelegate.m */; };
 		943590B51EC04E7D0073CF16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943590B41EC04E7D0073CF16 /* ViewController.m */; };
@@ -29,6 +41,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9430F0EF1EEFDF68008E0E3D /* DLFourPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFourPartViewController.h; sourceTree = "<group>"; };
+		9430F0F01EEFDF68008E0E3D /* DLFourPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFourPartViewController.m; sourceTree = "<group>"; };
+		9430F0F21EEFDF7C008E0E3D /* DLFourPartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFourPartView.h; sourceTree = "<group>"; };
+		9430F0F31EEFDF7C008E0E3D /* DLFourPartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFourPartView.m; sourceTree = "<group>"; };
+		9430F0F61EEFE1F4008E0E3D /* DLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCommon.h; sourceTree = "<group>"; };
+		9430F0F71EEFE1F4008E0E3D /* NSArray+DLArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DLArray.h"; sourceTree = "<group>"; };
+		9430F0F81EEFE1F4008E0E3D /* NSArray+DLArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DLArray.m"; sourceTree = "<group>"; };
+		9430F0F91EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DLAttributedString.h"; sourceTree = "<group>"; };
+		9430F0FA1EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DLAttributedString.m"; sourceTree = "<group>"; };
+		9430F0FB1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DLDictionary.h"; sourceTree = "<group>"; };
+		9430F0FC1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DLDictionary.m"; sourceTree = "<group>"; };
+		9430F0FD1EEFE1F4008E0E3D /* NSObject+DLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLObject.h"; sourceTree = "<group>"; };
+		9430F0FE1EEFE1F4008E0E3D /* NSObject+DLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLObject.m"; sourceTree = "<group>"; };
+		9430F0FF1EEFE1F4008E0E3D /* NSString+DLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DLString.h"; sourceTree = "<group>"; };
+		9430F1001EEFE1F4008E0E3D /* NSString+DLString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DLString.m"; sourceTree = "<group>"; };
+		9430F1011EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DLBarButtonItem.h"; sourceTree = "<group>"; };
+		9430F1021EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DLBarButtonItem.m"; sourceTree = "<group>"; };
+		9430F1031EEFE1F4008E0E3D /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
+		9430F1041EEFE1F4008E0E3D /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
+		9430F1051EEFE1F4008E0E3D /* UIColor+DLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DLColor.h"; sourceTree = "<group>"; };
+		9430F1061EEFE1F4008E0E3D /* UIColor+DLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DLColor.m"; sourceTree = "<group>"; };
+		9430F1071EEFE1F4008E0E3D /* UILabel+DLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DLLabel.h"; sourceTree = "<group>"; };
+		9430F1081EEFE1F4008E0E3D /* UILabel+DLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DLLabel.m"; sourceTree = "<group>"; };
+		9430F1091EEFE1F4008E0E3D /* UIViewController+DLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLViewController.h"; sourceTree = "<group>"; };
+		9430F10A1EEFE1F4008E0E3D /* UIViewController+DLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLViewController.m"; sourceTree = "<group>"; };
 		943590AA1EC04E7D0073CF16 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943590AE1EC04E7D0073CF16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		943590B01EC04E7D0073CF16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +121,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9430F0EC1EEFDF49008E0E3D /* fourPartView */ = {
+			isa = PBXGroup;
+			children = (
+				9430F0EF1EEFDF68008E0E3D /* DLFourPartViewController.h */,
+				9430F0F01EEFDF68008E0E3D /* DLFourPartViewController.m */,
+				9430F0F21EEFDF7C008E0E3D /* DLFourPartView.h */,
+				9430F0F31EEFDF7C008E0E3D /* DLFourPartView.m */,
+			);
+			path = fourPartView;
+			sourceTree = "<group>";
+		};
+		9430F0F51EEFE1F4008E0E3D /* DLCommon */ = {
+			isa = PBXGroup;
+			children = (
+				9430F0F61EEFE1F4008E0E3D /* DLCommon.h */,
+				9430F0F71EEFE1F4008E0E3D /* NSArray+DLArray.h */,
+				9430F0F81EEFE1F4008E0E3D /* NSArray+DLArray.m */,
+				9430F0F91EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.h */,
+				9430F0FA1EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.m */,
+				9430F0FB1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.h */,
+				9430F0FC1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.m */,
+				9430F0FD1EEFE1F4008E0E3D /* NSObject+DLObject.h */,
+				9430F0FE1EEFE1F4008E0E3D /* NSObject+DLObject.m */,
+				9430F0FF1EEFE1F4008E0E3D /* NSString+DLString.h */,
+				9430F1001EEFE1F4008E0E3D /* NSString+DLString.m */,
+				9430F1011EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.h */,
+				9430F1021EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.m */,
+				9430F1031EEFE1F4008E0E3D /* UIButton+DLButton.h */,
+				9430F1041EEFE1F4008E0E3D /* UIButton+DLButton.m */,
+				9430F1051EEFE1F4008E0E3D /* UIColor+DLColor.h */,
+				9430F1061EEFE1F4008E0E3D /* UIColor+DLColor.m */,
+				9430F1071EEFE1F4008E0E3D /* UILabel+DLLabel.h */,
+				9430F1081EEFE1F4008E0E3D /* UILabel+DLLabel.m */,
+				9430F1091EEFE1F4008E0E3D /* UIViewController+DLViewController.h */,
+				9430F10A1EEFE1F4008E0E3D /* UIViewController+DLViewController.m */,
+			);
+			path = DLCommon;
+			sourceTree = "<group>";
+		};
 		943590A11EC04E7D0073CF16 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +179,8 @@
 		943590AC1EC04E7D0073CF16 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				9430F0F51EEFE1F4008E0E3D /* DLCommon */,
+				9430F0EC1EEFDF49008E0E3D /* fourPartView */,
 				943590FC1EC063140073CF16 /* largePicture */,
 				943590D21EC04F4D0073CF16 /* ImageEffectt */,
 				943590C41EC04E9D0073CF16 /* Libs */,
@@ -269,22 +347,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9430F0F11EEFDF68008E0E3D /* DLFourPartViewController.m in Sources */,
 				943590F91EC054240073CF16 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				943590D11EC04EDB0073CF16 /* ImageEffects.m in Sources */,
 				943590F71EC054240073CF16 /* MASViewConstraint.m in Sources */,
+				9430F10F1EEFE1F4008E0E3D /* NSString+DLString.m in Sources */,
 				943590B51EC04E7D0073CF16 /* ViewController.m in Sources */,
 				943590B21EC04E7D0073CF16 /* AppDelegate.m in Sources */,
 				943590D51EC04F670073CF16 /* DLImageEffectViewController.m in Sources */,
 				943590FA1EC054240073CF16 /* View+MASAdditions.m in Sources */,
+				9430F1141EEFE1F4008E0E3D /* UIViewController+DLViewController.m in Sources */,
+				9430F10C1EEFE1F4008E0E3D /* NSAttributedString+DLAttributedString.m in Sources */,
 				943590F21EC054240073CF16 /* MASCompositeConstraint.m in Sources */,
+				9430F1111EEFE1F4008E0E3D /* UIButton+DLButton.m in Sources */,
 				943590F61EC054240073CF16 /* MASViewAttribute.m in Sources */,
 				943590F41EC054240073CF16 /* MASConstraintMaker.m in Sources */,
+				9430F1131EEFE1F4008E0E3D /* UILabel+DLLabel.m in Sources */,
+				9430F10D1EEFE1F4008E0E3D /* NSDictionary+DLDictionary.m in Sources */,
 				943590F81EC054240073CF16 /* NSArray+MASAdditions.m in Sources */,
 				943590FB1EC054240073CF16 /* ViewController+MASAdditions.m in Sources */,
 				943590F31EC054240073CF16 /* MASConstraint.m in Sources */,
+				9430F10E1EEFE1F4008E0E3D /* NSObject+DLObject.m in Sources */,
 				943590F51EC054240073CF16 /* MASLayoutConstraint.m in Sources */,
+				9430F0F41EEFDF7C008E0E3D /* DLFourPartView.m in Sources */,
+				9430F10B1EEFE1F4008E0E3D /* NSArray+DLArray.m in Sources */,
 				943590AF1EC04E7D0073CF16 /* main.m in Sources */,
 				943590FF1EC063280073CF16 /* DLLargePictureViewController.m in Sources */,
+				9430F1101EEFE1F4008E0E3D /* UIBarButtonItem+DLBarButtonItem.m in Sources */,
+				9430F1121EEFE1F4008E0E3D /* UIColor+DLColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
